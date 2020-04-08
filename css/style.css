@@ -274,6 +274,9 @@ ul ul{
 .textfield, .radio, .address, button{
         margin-left: 1rem;
     }  
+.wrap-xxs{
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 700px ) { /*xs*/
@@ -375,6 +378,9 @@ ul ul{
 
     .add{
         margin-left: 3rem;
+    }
+    .wrap-xs{
+        flex-wrap: wrap;
     }
 }
 
