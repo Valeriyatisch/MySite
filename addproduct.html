@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Оформление заказа</title>
+    <link rel="shortcut icon" href="img/cake-pop.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <ul class="flex-row container menu vcenter flex-xs-column flex-xxs-column">
+            <li><a href="index.html">Главная</a></li>
+            <li class="show">
+                <a href="catalog.html">Каталог</a>
+                <ul class="submenu">
+                    <li><a href="catalog.html">Торты</a></li>
+                    <li><a href="catalog.html">Пирожные</a></li>
+                    <li><a href="catalog.html">Пироги</a></li>
+                    <li><a href="catalog.html">Печенье</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#paydel">Доставка и оплата</a></li>
+            <li><a href="index.html#cont">Контакты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li class="basket"><a href="#"><img src="img/basket.png" /></a></li>
+        </ul>
+
+        <ul class="container vcenter flex-xs-column flex-xxs-column vertmenu">
+            <li class="show_2">
+                <a href="#">Меню</a>
+                <ul class="hide">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="show">
+                        <a href="catalog.html">Каталог</a>
+                        <ul class="submenu">
+                            <li><a href="catalog.html">Торты</a></li>
+                            <li><a href="catalog.html">Пирожные</a></li>
+                            <li><a href="catalog.html">Пироги</a></li>
+                            <li><a href="catalog.html">Печенье</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#paydel">Доставка и оплата</a></li>
+                    <li><a href="index.html#cont">Контакты</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li class="basket"><a href="#"><img src="img/basket.png" /></a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <section class="container">
+        <h1 class="headpage">Добавление товара</h1>
+
+        <form id="addproduct" name="form" action="#" method="post">
+
+            <div class="add">
+                <label for="category">Категория: </label><br />
+                <select id="category" name="category">
+                    <option value="cake">Торты</option>
+                    <option value="cupcake">Пирожные</option>
+                    <option value="pie">Пироги</option>
+                    <option value="cookie">Печенье</option>
+                </select>
+            </div>
+
+            <div class="add">
+                <label for="title">Наименование: </label><br />
+                <input id="title" type="text" maxlength="30" required />
+            </div>
+
+            <div class="add">
+                <label for="descrip">Описание: </label><br />
+                <textarea id="descrip" name="descrip" maxlength="200" required></textarea>
+            </div>
+
+            <div class="add">
+                <label for="consist">Состав: </label><br />
+                <textarea id="consist" name="consist" maxlength="200" required></textarea>
+            </div>
+
+            <div class="add">
+                <label for="cost">Цена:</label><br />
+                <input id="cost" name="cost" type="number" min="50" max="10000" required>
+            </div>
+
+            <div class="add">
+                <label for="photo">Фото товара:</label><br />
+                <input id="photo" multiple type="file" name="photo[]" accept="image/*" required>
+            </div>
+
+            <div class="add">
+                <label for="sale">Скидка: </label><br />
+                <select id="sale" name="sale">
+                    <option value="no">Нет</option>
+                    <option value="five">5%</option>
+                    <option value="ten">10%</option>
+                    <option value="fifteen">15%</option>
+                </select>
+            </div>
+            <div class="add">
+                <input type="submit" value="Добавить" />
+            </div>
+
+        </form>
+</section>
+
+    <footer>
+        <div class="container flex-row flex-xs-column flex-xxs-column">
+            <ul class="flex-4 menu down">
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="index.html#paydel">Доставка и оплата</a></li>
+                <li><a href="blog.html">Блог</a></li>
+            </ul>
+
+            <div class="flex-4 sign">
+                <form name="email" action="#" method="post">
+                    <p>Подписаться на рассылку</p>
+                    <input type="email" name="email" size="25" placeholder="youremail@gmail.com" />
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+
+            <div class="flex-4 flex-row social flex-xs-column">
+                <a href="#"><img src="img/inst.png" /></a>
+                <a href="#"><img src="img/vk.png" /></a>
+                <a href="#"><img src="img/tel.png" /></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

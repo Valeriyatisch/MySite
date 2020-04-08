@@ -1,0 +1,134 @@
+﻿
+.background img {
+    width: 100%;
+}
+
+.background {
+    position: relative;
+}
+
+.head {
+    position: absolute;
+    top: 2.5em;
+    font-family: 'Marck Script', cursive;
+    font-weight: lighter;
+    font-size: 3em;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    top: 20em;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.pos {
+    position: absolute;
+    top: 27.5em;
+}
+
+.space {
+    padding: 0.5em 0.5em 0.5em 0;
+}
+
+    .space img {
+        height: 100%;
+    }
+
+.caption {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 2.5em;
+    text-align: center;
+}
+
+.headpage {
+    font-family: 'Marck Script', cursive;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.caption a {
+    text-decoration: none;
+    background: #fe3432;
+    color: white;
+    padding: 0.5em 2.5em;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+    .about img {
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+    }
+
+.center {
+    text-align: center;
+    padding: 0 1em;
+}
+
+.icons {
+    padding-top: 3em;
+}
+
+    .icons img {
+        width: 15%;
+    }
+
+.rect {
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.ident {
+    margin: 1em;
+}
+
+.short {
+    display: block;
+    text-align: center;
+    padding: 2em 0;
+}
+
+    .short img {
+        width: 25%;
+    }
+
+.less {
+    font-size: 0.9em;
+}
+
+.pic {
+    margin: auto 0;
+}
+
+    .pic img {
+        height: 1.5em;
+        width: auto;
+    }
+
+.ser {
+    display: block;
+    margin: auto 0;
+}
+
+.contact {
+    display: block;
+    text-align: right;
+}
+
+.c_note {
+    padding-left: 1em;
+}
+
+.caption a:hover {
+    background: #ca1e1d;
+    transition: 0.5s;
+}
+

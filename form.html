@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/cake-pop.png">
+</head>
+<body>
+    <header>
+        <ul class="flex-row container menu vcenter flex-xs-column flex-xxs-column">
+            <li><a href="index.html">Главная</a></li>
+            <li class="show">
+                <a href="catalog.html">Каталог</a>
+                <ul class="submenu">
+                    <li><a href="catalog.html">Торты</a></li>
+                    <li><a href="catalog.html">Пирожные</a></li>
+                    <li><a href="catalog.html">Пироги</a></li>
+                    <li><a href="catalog.html">Печенье</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#paydel">Доставка и оплата</a></li>
+            <li><a href="index.html#cont">Контакты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li class="basket"><a href="#"><img src="img/basket.png" /></a></li>
+        </ul>
+
+        <ul class="container vcenter flex-xs-column flex-xxs-column vertmenu">
+            <li class="show_2">
+                <a href="#">Меню</a>
+                <ul class="hide">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="show">
+                        <a href="catalog.html">Каталог</a>
+                        <ul class="submenu">
+                            <li><a href="catalog.html">Торты</a></li>
+                            <li><a href="catalog.html">Пирожные</a></li>
+                            <li><a href="catalog.html">Пироги</a></li>
+                            <li><a href="catalog.html">Печенье</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#paydel">Доставка и оплата</a></li>
+                    <li><a href="index.html#cont">Контакты</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li class="basket"><a href="#"><img src="img/basket.png" /></a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <section class="container">
+        <h1 class="headpage">Оформление заказа</h1>
+
+        <form id="form" name="form" action="#" method="post">
+            <div class="flex-row flex-xxs-column">
+                <div class="textfield flex-6">
+                    <input type="text" name="name" required placeholder="Ваше имя">
+                </div>
+
+                <div class="textfield flex-6">
+                    <input type="text" name="lastname" maxlength="20" required placeholder="Ваша фамилия">
+                </div>
+            </div>
+
+            <div class="flex-row flex-xxs-column">
+                <div class="textfield flex-6">
+                    <input type="text" name="phone" maxlength="20" required placeholder="Номер телефона">
+                </div>
+
+                <div class="textfield flex-6">
+                    <input type="email" name="mail" maxlength="15" required placeholder="Электронная почта">
+                </div>
+            </div>
+
+            <div class="radio flex-xxs-column">
+                <h5>Способ доставки:</h5>
+                <label>
+                    <input type="radio" name="delivery" value="man" required>
+                    Курьером
+                </label>
+                <label>
+                    <input type="radio" name="delivery" value="self" required>
+                    Самовывоз
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="textfield address flex-xxs-column">
+                <input type="text" name="address" maxlength="15" placeholder="Адрес доставки">
+            </div>
+
+            <div class="radio flex-xxs-column">
+                <h5>Способ оплаты:</h5>
+                <label>
+                    <input type="radio" name="pay" value="cash" required>
+                    Наличными
+                </label>
+                <label>
+                    <input type="radio" name="pay" value="cardtoman" required>
+                    Банковской картой курьеру
+                </label>
+                <label>
+                    <input type="radio" name="pay" value="card" required>
+                    Картой онлайн (скидка 5%)
+                </label>
+            </div>
+        </form>
+        <div class="center left-xxs">
+            <button type="submit" form="form">Оформить заказ</button>
+        </div>
+</section>
+
+    <footer>
+        <div class="container flex-row flex-xs-column flex-xxs-column">
+            <ul class="flex-4 menu down">
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="index.html#paydel">Доставка и оплата</a></li>
+                <li><a href="blog.html">Блог</a></li>
+            </ul>
+
+            <div class="flex-4 sign">
+                <form name="email" action="#" method="post">
+                    <p>Подписаться на рассылку</p>
+                    <input type="email" name="email" size="25" placeholder="youremail@gmail.com" />
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+
+            <div class="flex-4 flex-row social flex-xs-column">
+                <a href="#"><img src="img/inst.png" /></a>
+                <a href="#"><img src="img/vk.png" /></a>
+                <a href="#"><img src="img/tel.png" /></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
